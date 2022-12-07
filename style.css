@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+body {
+
+    font-size: 18px;
+    width: 100vw;
+    min-height: 100vh;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-container {
+
+    background-image: url(images/bg-header-mobile.png);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.top-container img {
+
+    padding-top: 7rem;
+
+}
+
+h1,
+h2,
+h4 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+p {
+    padding-left: 2rem;
+    padding-right: 2.5rem;
+    line-height: 30px;
+    text-align: center;
+    color: var(--Grayish-Blue);
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border-radius: 40px;
+    padding: 1rem;
+    color: white;
+
+}
+
+.windows {
+    border-bottom: solid hsl(171, 65%, 38%);
+    background-color: var(--Strong-Cyan);
+    box-shadow: -1px 14px 20px -14px rgba(38, 186, 164, 0.76);
+}
+
+.windows:hover {
+    cursor: pointer;
+    box-shadow: -1px 14px 20px -14px rgba(22, 101, 89, 0.76);
+}
+
+.mac {
+
+    border-bottom: solid hsl(233, 54%, 54%);
+    background-color: var(--Light-Blue);
+    box-shadow: -1px 14px 20px -14px rgba(97, 115, 225, 0.75);
+}
+
+.mac:hover {
+
+    cursor: pointer;
+    box-shadow: -1px 14px 20px -14px rgba(51, 63, 141, 0.75);
+}
+
+.device-container figure img,
+.text-container figure img {
+
+    width: 100%;
+}
+
+h4 {
+
+    font-size: 1.5em;
+}
+
+.icons-container {
+
+    text-align: center;
+}
+
+.icons-container img {
+
+    margin-top: 2rem;
+}
+
+.companies-name-container {
+
+    text-align: center;
+}
+
+.text-container a {
+    text-align: center;
+}
+
+footer {
+
+    margin-top: 5rem;
+    padding-top: 5rem;
+    background-color: rgb(237, 236, 236);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+footer figure img {
+    width: 20%;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+
+    margin-bottom: 1rem;
+    list-style: none;
+    text-align: center;
+
+    padding-right: 2rem;
+    font-size: 1.2em;
+    color: var(--Grayish-Blue);
+}
+
+ul li {
+    margin-bottom: 2rem;
+}
+
+li:hover {
+
+    cursor: pointer;
+    color: var(--Strong-Cyan);
+}
+
+.social-media-icon {
+
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icon a {
+    all: unset;
+    margin: 1rem;
+}
+
+.social-media-icon a svg {
+
+    fill: rgb(147, 145, 145);
+}
+
+.social-media-icon a svg :hover {
+
+    cursor: pointer;
+    fill: var(--Strong-Cyan);
+}
+
+@media(min-width:48em) {
+
+    h1,
+    h2,
+    h4 {
+        padding-left: 8rem;
+        padding-right: 8rem;
+        font-size: 2em;
+    }
+
+    p {
+        padding-left: 10rem;
+        padding-right: 10rem;
+        font-size: 1.5em;
+        line-height: 40px;
+    }
+
+    a {
+
+        width: 60%;
+        font-size: 1.5em;
+        font-weight: 400;
+        padding: 1.5rem;
+    }
+
+    .device-container,
+    .text-container {
+        text-align: center;
+    }
+
+    .device-container figure img,
+    .text-container figure img {
+
+        width: 80%;
+
+    }
+}
+
+/* Media Query for Desktop Screen  */
+
+@media(min-width:90em){
+
+    .top-container {
+
+        background-image: url(images/bg-header-desktop.png);
+        padding-top: 15rem;
+
+    }
+    .top-container img{
+
+        width: 15vw;
+    }
+    
+    .paragraph-under-level-1-heading{
+        padding-left: 21rem;
+        padding-right: 21rem;
+        line-height: 35px;
+        font-size: 1.5em;
+        margin-bottom: 4rem;
+    }
+    .button-container{
+
+        margin-top: 3rem;
+        margin-bottom: 10rem;
+    }
+    a{
+
+        display: inline;
+        padding: 1.5rem 4rem;
+        font: 2em;
+        margin: 1rem;  
+    }
+    .paragraph-under-level-2-heading{
+        padding-left: 19rem;
+        padding-right: 19rem;
+        line-height: 35px;
+        font-size: 1.5em;
+        
+    }
+    .device-container{
+        display: flex;
+        position: relative;
+    }
+    .device-container figure{
+
+        width: 50%;
+    }
+    .device-container figure img{
+
+        width: 100%;
+        position: relative;
+        right: 60px;
+    }
+    .aside-container{
+
+        width: 50%;
+
+    }
+    .level-4-heading{
+
+        font-size: 1.5em;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .paragraph-under-level-4-heading{
+
+        font-size: 1.5em;
+        margin: 0;
+        padding: 0;
+        padding-right: 14rem;
+        text-align: left;    
+    }
+    .text-container figure img {
+
+        width: 60%;
+        margin-top: 3rem;
+    }
+    .icons-container{
+        display: flex;
+        justify-content: center;  
+        margin: 2rem;
+    }
+    .level-4-heading-icon-container{
+
+        text-align: center;
+        font-size: 1em;
+    }
+    .p-under-level-4-heading{
+
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        font-size: 1.2em;
+        padding-left: 0.5rem; 
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+    .companies-name-container {
+
+        display: flex;
+        margin: 7rem 3rem 3rem 3rem;
+    }
+    .companies-name-container a{
+
+      margin: 0;
+      padding: 0;
+    }
+    .p-under-level-2-heading{
+        line-height: 35px;
+        font-size: 1.5em;
+        padding-left: 15rem;
+        padding-right: 15rem;
+        margin-bottom: 5rem;
+    }
+
+    footer{
+
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin-top: 12rem;
+        
+    }
+   
+   .bottom-logo img {
+
+        width: 40%;
+        margin-left: 5rem;
+        padding-top: 1.5rem;
+     
+    }
+    .list-container{
+
+        display: flex;
+        margin-left: 8rem;
+        text-align: left;
+    }
+    .list-container li{
+
+        padding: 1rem;
+    }
+    ul li {
+        margin-bottom: 0.2rem;
+    }
+    .social-media-icon{
+
+        display: flex;
+        align-items: center;
+        margin-left: 15rem;
+    }
+    
+}
