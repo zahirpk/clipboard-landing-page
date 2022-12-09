@@ -358,11 +358,12 @@ li:hover {
 
         display: flex;
         margin-left: 8rem;
-        text-align: left;
     }
     .list-container li{
 
         padding: 1rem;
+        text-align: left;
+
     }
     ul li {
         margin-bottom: 0.2rem;
